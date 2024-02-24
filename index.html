@@ -1,159 +1,282 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <meta charset="utf-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Vitor Hideki</title>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
-          integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-            crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-            integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-            crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-            integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-            crossorigin="anonymous"></script>
-    <style media="screen">
-        body {
-            background-color: #fff;
-            font-family: "Open Sans", sans-serif
-        }
+  <title>Vitor Hideki</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-        .navbar .navbar-nav .nav-link {
-            color: #fff;
-        }
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-        .intro {
-            background-image: url("./img/bg.png")
-        }
-    </style>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/style.css" rel="stylesheet">
+
 </head>
-<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.13.0/css/all.css">
-<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Terminal+Dosis">
+
 <body>
-<div class="container-fluid px-0">
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top shadow">
-            <a class="navbar-brand" href="#">Vitor Hideki</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Alterna navegação">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">
-                            <i class="fas fa-home"></i> Home <span class="sr-only">(Página atual)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <i class="far fa-user"></i>
-                            Sobre </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <i class="fas fa-envelope"></i> Contato </a>
-                    </li>
 
-                </ul>
-            </div>
-        </nav>
-        <div class="jumbotron jumbotron-fluid intro ">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-6">
-                        <h1 class="display-4 mt-5">About me</h1>
-                        <p class="lead">I am currently a data engineer with a proficiency in Python, Spark, SQL, Airflow, FastAPI, Git, and Kubernetes. My professional background involves working with data, including experience in developing machine learning models and applying advanced techniques to solve complex problems in the healthcare domain.
+  <i class="bi bi-list mobile-nav-toggle d-lg-none"></i>
+  <header id="header" class="d-flex flex-column justify-content-center">
 
-I hold a degree in Information Systems from the Federal University of Mato Grosso do Sul, providing me with a strong foundation in programming concepts and artificial intelligence..</p>
-                    </div>
-                    <div class="col-xs-6 col-md-3 mb-0">
-                        <img src="img/imagem-intro.png" class="rounded-circle" alt="introdução">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+    <nav id="navbar" class="navbar nav-menu">
+      <ul>
+        <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+        <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Sobre</span></a></li>
+        <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Curriculum vitæ</span></a></li>
+      </ul>
+    </nav>
 
+  </header>
 
-    <div class="projetos container">
-        <h1 class="text-center">Projetos feitos</h1>
-        <hr>
-        <div class="row">
-            <div class="card mx-auto" style="width: 18rem;">
-                <img class="card-img-top" src="img/calculadora.png" alt="Imagem do projeto da calculadora">
-                <div class="card-body">
-                    <h5 class="card-title">Calculadora</h5>
-                    <p class="card-text">Neste trabalho criei uma calculadora que deveria ser feita somente com Javascript, CSS e HTML.</p>
-                    <a href="https://github.com/VitorHideki/calculadora" class="btn btn-primary">Visitar</a>
-                </div>
-            </div>
-            <div class="card  mx-auto" style="width: 18rem;">
-                <img class="card-img-top" src="img/site.png" alt="Site">
-                <div class="card-body">
-                    <h5 class="card-title">Webcommerce</h5>
-                    <p class="card-text">Neste trabalho tive que refazer a parte do frontend seguindo um modelo de webcommerce passado pelo professor.</p>
-                    <a href="https://github.com/VitorHideki/replica-do-site" class="btn btn-primary">Visitar</a>
-                </div>
-            </div>
-            <div class="card  mx-auto" style="width: 18rem;">
-                <img class="card-img-top" src="img/Hotel%20vue.png" alt="Hotel">
-                <div class="card-body">
-                    <h5 class="card-title">Aplicação utilizando Vue js</h5>
-                    <p class="card-text">Neste trabalho deveriamos fazer o frontend de um webcomerce e utilizar o VueJs e conseguir realizar as quatro operações do CRUD.</p>
-                    <a href="https://github.com/VitorHideki/AplicacaoVueJS" class="btn btn-primary">Visitar</a>
-                </div>
-            </div>
-        </div>
-        <hr>
-        <div class="container main">
-            <h1 class="text-center"><i class="fas fa-clipboard-list"></i> Certificados e cursos </h1>
-            <p class="row">
-                <p><i class="fas fa-star"></i> Introdução à Ciência da Computação com Python
-                    Parte 1 - UNIVERSIDADE DE SÃO PAULO (concluido)
-                    <a href="https://www.coursera.org/account/accomplishments/certificate/H6MVUDKXG9EL">- ver certificado</a>
-                </p>
-                <p><i class="fas fa-star"></i> Aprendendo a programar em Java - 6,5 horas totais (concluido)
-                    <a href="https://udemy-certificate.s3.amazonaws.com/pdf/UC-PTV1I0J3.pdf">- ver certificado</a></p>
-                <p><i class="fas fa-star"></i> Participação em Evento: Startup Weekend Campo Grande/MS 2018 - 68h  </p>
-                <p><i class="fas fa-star"></i> Participação em Evento: Startup Weekend Campo Grande/MS 2020 - 68h</p>
-                <p><i class="fas fa-spinner"></i> Desenvolvimento Ágil com Java Avançado - INSTITUTO TECNOLÓGICO
-                    DE AERONÁUTICA (Em andamento)</p>
-                <p><i class="fas fa-spinner"></i> Princípios de Desenvolvimento Ágil de Software - INSTITUTO TECNOLÓGICO
-                    DE AERONÁUTICA(Em andamento)</p>
-                <p><i class="fas fa-spinner"></i> Desenvolvimento Ágil com Padrões de Projeto - INSTITUTO TECNOLÓGICO DE
-                    AERONÁUTICA (Em andamento)</p>
-                <p><i class="fas fa-spinner"></i> TDD – Desenvolvimento de Software Guiado por Testes - INSTITUTO TECNOLÓGICO DE AERONÁUTICA (Em andamento)
-                </p>
-            </p>
-        </div>
+  <section id="hero" class="d-flex flex-column justify-content-center">
+    <div class="container" data-aos="zoom-in" data-aos-delay="100">
+      <h1>Vitor Hideki</h1>
+      <p>Eu sou <span class="typed" data-typed-items="Engenheiro de dados, Desenvolvedor"></span></p>
+      <div class="social-links">
+        <a href="https://linkedin.com/in/vitor-hideki-" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+      </div>
     </div>
-<hr>
-    <footer class="jumbotron-fluid bg-dark mb-0">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-6">
-                    <p class="text-center text-white mt-5 mb-0">
-                        ® Todos os Direitos Reservados.
-                        Feito com <a href="https://getbootstrap.com.br/" target="_blank" rel="noopener noreferrer">Bootstrap</a> e <i class="fas fa-heart" style="color:#E06C75;"></i></p>
-                </div>
-                <div class="col-sm-6 col-md-5 ml-5 mt-2 mb-2 col-xl-5">
-                    <h5 class="text-white text-center">Redes sociais</h5>
-                        <p class="mb-0 text-white text-center"><a href="https://www.linkedin.com/in/vitor-hideki-ba45b214b/" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i> Linkedln</a></p>
-                        <p class="mb-0 text-white text-center"><a href="https://github.com/VitorHideki?tab=repositories" target="_blank" rel="noopener noreferrer"><i class="fab fa-github"></i> Github</a></p>
-                        <p class="mb-0 text-white text-center"><a href="https://www.facebook.com/vitor.hideki.148" target="_blank" rel="noopener noreferrer"><i class="fab fa-facebook"></i> Facebook</a></p>
-                        <p class="mb-0 text-white text-center"><a href="https://www.instagram.com/hidekivitor/" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i> Instagram</a></p>
+  </section>
 
-                </div>
-            </div>
+  <main id="main">
+
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Sobre mim</h2>
+          <p>Minhas habilidades incluem manipulação de grandes volumes de dados, desenvolvimento de pipelines eficientes, uso de tecnologias como Apache Spark, Airflow, Python e algoritmos de Machine Learning, além de análise e deploy de aplicações. Sou apaixonado por extrair insights significativos dos dados e comprometido com o processamento confiável e eficiente de informações em escala.
+          </p>
         </div>
-    </footer>
-</div>
+
+        <div class="row">
+          <div class="col-lg-4">
+            <img src="assets/img/1526914327354.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content">
+            <h3>Engenheiro de Dados</h3>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Aniversário:</strong> <span>12 Agosto de 1999</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Website:</strong> <span><a href="https://vitorhideki.com.br" class="linkedin">https://vitorhideki.com.br</a></span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Nacionalidade:</strong> <span>Japão - Brasileiro Naturalizado</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Idade:</strong> <span>24</span></li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Escolaridade:</strong> <span>MBA - Machine Learning</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Graduação:</strong> <span>Sistemas de Informação - UFMS</span></li>
+                  <li><i class="bi bi-chevron-right"></i> <strong>Email:</strong> <span>vitorhideki10@gmail.com</span></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section id="skills" class="skills section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Habilidades</h2>
+          <p>Essa são algumas tecnologias que já utilizei no mercado de trabalho.</p>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill">Python <i class="val">100%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Airflow <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">SQL <i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          <div class="progress">
+              <span class="skill">Machine Learning<i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+                       <div class="progress">
+              <span class="skill">RPA<i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+
+            <div class="progress">
+              <span class="skill">Git <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Docker <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Apache Spark <i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+           <div class="progress">
+              <span class="skill">AWS<i class="val">75%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+           <div class="progress">
+              <span class="skill">Web Scrappnig<i class="val">85%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+    <section id="resume" class="resume">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6">
+            <h3 class="resume-title">Sumary</h3>
+            <div class="resume-item pb-0">
+              <h4>Sobre mim</h4>
+              <p><em>Atuo trabalhando como engenheiro de dados desde 2021, atuando com desenvolvimento de modelos de machine learning, e realizando integrações de dados e automações de processos.</em></p>
+              <ul>
+                <li>vitorhideki10@gmail.com</li>
+              </ul>
+            </div>
+
+            <h3 class="resume-title">Formação</h3>
+            <div class="resume-item">
+              <h4>MBA - Machine Learning</h4>
+              <h5>2022 - 2023</h5>
+            </div>
+            <div class="resume-item">
+              <h4>Bacharelado - Sistemas de Informação - UFMS</h4>
+              <h5>2018 - 2021</h5>
+              <p><em>Mato Grosso do Suul</em></p>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <h3 class="resume-title">Experiência Profissional</h3>
+            <div class="resume-item">
+              <h4>Engenheiro de dados Pleno</h4>
+              <h5>2023 - Present</h5>
+              <p><em>A3Data - Remoto</em></p>
+              <ul>
+                <li>Realização de deploy de aplicações</li>
+                <li>Elaboração de arquitetura de projetos</li>
+                <li>Suporte e manutenção em código em R</li>
+                <li>Desenvolvimento de backend em Python</li>
+                <li>Utilização de Airflow para pipeline de dados</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Analista de Inteligência Artificial - Engenheiro de Dados</h4>
+              <h5>2021 - 2023</h5>
+              <p><em>JMJ Sistemas - Sinop, Mato Grosso</em></p>
+              <ul>
+                <li>Desenvolvimento de pipelines de dados utilizando tecnologias como Apache Spark, Airflow e Python.</li>
+                <li>Colaboração em equipes multidisciplinares, participando de reuniões diárias de scrum, planejamentos de sprint e retrospectivas.</li>
+                <li>Manipulação de grandes volumes de dados e aplicação de algoritmos de Machine Learning.</li>
+                <li>Análise e deploy de aplicações para processamento eficiente de dados em grande escala.</li>
+                <li>Utilização de Docker para implementação e gerenciamento de containers.</li>
+                <li>Utilização de SQL para consultas e manipulação de dados.</li>
+                <li>Utilização do Git para controle de versionamento de código.</li>
+                <li>Experiência em Extração, Transformação e Carga (ETL) de dados.</li>
+                <li>Habilidade em coletar, limpar e transformar dados de diferentes fontes para uso em modelos de Machine Learning e outras aplicações.</li>
+                <li>Conhecimento em técnicas de web scraping para obtenção de dados de fontes diversas.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="social-links">
+        <a href="https://linkedin.com/in/vitor-hideki-" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+        <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
+      </div>
+      <div class="copyright">
+       ® Todos os Direitos Reservados. Feito com <a href="https://getbootstrap.com.br/" target="_blank" rel="noopener noreferrer">Bootstrap</a>
+      </div>
+    </div>
+  </footer>
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/js/main.js"></script>
+
 </body>
 
 </html>
